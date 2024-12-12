@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: 'add_contact', component: AddContactComponent },
   { path: 'edit_contact/:id', component: EditContactComponent},
   { path: 'view_contact/:id', component: ViewContactComponent},
+  { path: '**', redirectTo: '/dashboard' },
 ];
 
 @NgModule({
