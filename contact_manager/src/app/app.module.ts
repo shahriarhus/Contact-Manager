@@ -8,8 +8,14 @@ import { AddContactComponent } from './add-contact/add-contact.component';
 import { EditContactComponent } from './edit-contact/edit-contact.component';
 import { ViewContactComponent } from './view-contact/view-contact.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import {MatButtonModule} from '@angular/material/button';
-import {MatCardModule} from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import {MatInputModule} from '@angular/material/input';
+import {FormsModule} from '@angular/forms';
+import {ReactiveFormsModule} from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +29,12 @@ import {MatCardModule} from '@angular/material/card';
     BrowserModule,
     AppRoutingModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideAnimationsAsync()
