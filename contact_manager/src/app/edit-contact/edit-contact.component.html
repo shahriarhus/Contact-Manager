@@ -1,1 +1,7 @@
-<p>edit-contact works!</p>
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name">
+    </mat-form-field>
+   
+  
